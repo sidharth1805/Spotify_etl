@@ -1,9 +1,6 @@
 import Extract
 import pandas as pd 
 
-#Importing the songs_df from the Extract.py
-load_df=Extract.return_dataframe()
-print(load_df)
 # Set of Data Quality Checks Needed to Perform Before Loading
 def Data_Quality(load_df):
     #Checking Whether the DataFrame is empty
@@ -22,5 +19,18 @@ def Data_Quality(load_df):
     if load_df.isnull().values.any():
         raise Exception("Null values found")
 
-Data_Quality(load_df)
+def Transform_df(load_df):
+    Transformed_df=load_df.groupby(['artist_name']).count()
+
+    return Transformed_df
+
+if __name__ == "__main__":
+    #Importing the songs_df from the Extract.py
+    load_df=Extract.return_dataframe()
+    print(load_df)
+    Transformed_df=Transform_df(load_df)
+    print(Transformed_df)
+
+
+    
     
