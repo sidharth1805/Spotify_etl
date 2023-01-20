@@ -21,9 +21,9 @@ def Data_Quality(load_df):
 
 # Writing some Transformation Queries to get the count of artist
 def Transform_df(load_df):
-    Transformed_df=load_df.groupby(['artist_name'],as_index = False).count()
-    Transformed_df.rename(columns ={'timestamp':'count'}, inplace=True)
-    return Transformed_df[['artist_name','count']]
+    Transformed_df=load_df.groupby(['timestamp','artist_name'],as_index = False).count()
+    Transformed_df.rename(columns ={'played_at':'count'}, inplace=True)
+    return Transformed_df[['timestamp','artist_name','count']]
 
 if __name__ == "__main__":
 

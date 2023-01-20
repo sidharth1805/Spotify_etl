@@ -40,15 +40,30 @@ if __name__ == "__main__":
     sql_query_2 = """
     CREATE TABLE IF NOT EXISTS fav_artist(
         artist_name VARCHAR(200),
-        count VARCHAR(200)   
+        count VARCHAR(200),
+        CONSTRAINT primary_key_constraint PRIMARY KEY (artist_name)
     )
     """
     cursor.execute(sql_query_1)
     cursor.execute(sql_query_2)
     print("Opened database successfully")
+    try:
+        load_df.to_sql("my_played_tracks", engine, index=False, if_exists='append')
+    except:
+        print("Data already exists in the database")
+    try:
+        Transformed_df.to_sql("fav_artist", engine, index=False, if_exists='append')
+    except:
+        print("Data already exists in the database2")
 
-    load_df.to_sql("my_played_tracks", engine, index=False, if_exists='append')
-    Transformed_df.to_sql("fav_artist", engine, index=False, if_exists='append')
+    #cursor.execute('DROP TABLE my_played_tracks')
+    #cursor.execute('DROP TABLE fav_artist')
+
+
+
+
+
+
 
     conn.close()
     print("Close database successfully")

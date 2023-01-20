@@ -5,7 +5,9 @@ import datetime
 
 
 USER_ID = "lxi1d1lsodtuyosc12xhufdpq" 
-TOKEN = "BQAEMmcwNY7xmIoMV0ehstE3Lwi5vpfQZby9s8hJ_WPvAhCWsa0VItQiahhiB_WBDt2TR_YUZCctP2nF8WcQ3cp8vOo8bQFzc0UvOEfroJwqFeRF7v82GDrM_RLeuea1NY20OTvy9aBkc4sLWA_Vj2wfgQEJIVQQEmf9IL1YbEAcIrl2lTmqAq-mqeAvzF_oyNVi"
+TOKEN = "BQBTFtuIH8vYtN9quKwZTXihiC-mapLF-PRKZqiK9setzb-pMDub06Kw7CwjbizDmtkqy7FZVe1XPole5xCcD502onbnmEWj_36nKkvsLCrKrcROf6qrgAUcshRFvwTcPnZ41EMY_-wgMaR9dyneVIl8I2cwyNXmT317JO5m4D-eoo-QsznaH5xTniUi1wwNob4f"
+
+
 # Creating an function to be used in other pyrhon files
 def return_dataframe(): 
     input_variables = {
