@@ -20,16 +20,20 @@ def Data_Quality(load_df):
         raise Exception("Null values found")
 
 def Transform_df(load_df):
-    Transformed_df=load_df.groupby(['artist_name']).count()
-
-    return Transformed_df
+    Transformed_df=load_df.groupby(['artist_name'],as_index = False).count()
+    Transformed_df.rename(columns ={'timestamp':'count'}, inplace=True)
+    return Transformed_df[['artist_name','count']]
 
 if __name__ == "__main__":
     #Importing the songs_df from the Extract.py
     load_df=Extract.return_dataframe()
-    print(load_df)
+
     Transformed_df=Transform_df(load_df)
     print(Transformed_df)
+
+
+
+
 
 
     

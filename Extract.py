@@ -16,7 +16,7 @@ def return_dataframe():
     }
      
     today = datetime.datetime.now()
-    yesterday = today - datetime.timedelta(days=1)
+    yesterday = today - datetime.timedelta(days=2)
     yesterday_unix_timestamp = int(yesterday.timestamp()) * 1000
 
     # Download all songs you've listened to "after yesterday", which means in the last 24 hours      
