@@ -8,7 +8,7 @@ USER_ID = "lxi1d1lsodtuyosc12xhufdpq"
 TOKEN = "BQAX-XM1ZBONHRotRMsvqbIeQHB4Cjc2UKnZn-WXY8Zbx2yHbTvvWUQl6E9f0EK1PqeUTlgeOw5aYl5qMd9YIWttsLKn0TiAYWMYOILdryhi1sh1nSRwCfByonOa54DFlt2iYvhD0xT0zq0PQaMaNfJGJkWfnAqjYt-xDZCWMmkIy6Ji_i-qFFWxaVlTPoE_X4DS"
 
 
-
+# Creating an function to be used in other pyrhon files
 def return_dataframe(): 
     input_variables = {
         "Accept" : "application/json",
