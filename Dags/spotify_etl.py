@@ -9,8 +9,8 @@ import datetime
 
 
 
-USER_ID = "lxi1d1lsodtuyosc12xhufdpq" 
-TOKEN = "BQCHPiV6Jc10kH3xlVOFwtw6Ge9e9C_R35B5Gl3ctLEEAMeOA1rnj8zdavJfAWZWZxKioWjtvcWNg93nfVsmrRXuu5_3t0WvJK9rtaz_QP2VL46zthdwuKLowoIo_0rUpx25DOBPkYBYfwbXMCKlsx9ftIAr8pXnP-GyJfhZDYnWcMj_hJT0BBcYw4m1p0d3MaHZMQ"
+USER_ID = "YOUR_USERNAME_HERE" 
+TOKEN = "YOUR_TOKEN_HERE"
 print('started')
 # Creating an function to be used in other pyrhon files
 def return_dataframe(): 
