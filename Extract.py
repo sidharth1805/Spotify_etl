@@ -4,8 +4,8 @@ from datetime import datetime
 import datetime
 
 
-USER_ID = "lxi1d1lsodtuyosc12xhufdpq" 
-TOKEN = "BQDyB7PWKEvJU7_fbQPBLB-bc4bM5MIPsbjK78GAYW9doNVSxB9V9jprT9D4HZI5HTsLokXIwbPp9Vvst4VyQbwad8D-Gx9_ivgSc-MXIddorA4FRhoY6LaBE6_cvNv-FyzDTLrWZbF7EfsCYWuT3TvV2cHQasc1IeSu8YD55Nsoisql8h4SualtNBhSz5fI_q-T"
+USER_ID = "YOUR_USER_NAME" 
+TOKEN = "YOUR_TOKEN"
 
 
 # Creating an function to be used in other pyrhon files
